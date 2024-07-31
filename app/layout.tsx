@@ -1,9 +1,8 @@
-import {Stack} from "@mui/material";
+'use client'
 import './main-styles.scss'
-import MenuIcon from '@mui/icons-material/Menu';
 import React from "react";
-import {Box} from "@mui/system";
 import RozetkaLogo from './static/images/rozetka-header.svg'
+import HeaderMenu from './static/images/menu.svg'
 
 export default function RootLayout({
                                        children,
@@ -13,12 +12,16 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body>
-        <Stack direction="row" className="header">
-            <MenuIcon className="menu-icon"/>
-            <Box
-            component="img"
-            src={RozetkaLogo}
-            />
+        <div className="header">
+            <img src={HeaderMenu} className="menu-icon" alt="Menu"/>
+            <img src={RozetkaLogo} alt="Logo"/>
+            <button className="button">
+                <text className="catalog-text">
+                    Catalog
+                </text>
+            </button>
+            <input className="search-field" type="text"/>
+        </div>
         <main>{children}</main>
         </body>
         </html>

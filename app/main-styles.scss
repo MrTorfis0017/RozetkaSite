@@ -12,8 +12,31 @@
   height: 72px;
   background-color: #221f1f;
   color: white;
-  .menu-icon{
+  gap: 14px;
+
+  .menu-icon {
     width: 40px;
     height: 40px;
+  }
+
+  .button {
+    width: 126px;
+    height: 40px;
+    background-color: #fff3;
+    border-radius: 12px;
+    color: #fff;
+    &:hover {
+      background-color: #fff6;
+    }
+    .catalog-text{
+      text-transform: none;
+    }
+  }
+
+  .search-field{
+    height: 40px;
+    border-radius: 12px;
+    padding: 0 0 0 10px;
+    border:0;
   }
 }
