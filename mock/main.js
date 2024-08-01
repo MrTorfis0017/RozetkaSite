@@ -7,7 +7,7 @@ async function setup() {
     await addRestExpectations([
         {
             method: 'GET',
-            path: '/api/personal-exam/me',
+            path: '/api.ts/catalog/find-categories-sidebar',
             statusCode: 200,
             responseFile: './catalog-data/all-catalog-categories.json',
             delayMs: 100,
