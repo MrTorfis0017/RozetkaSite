@@ -12,24 +12,26 @@
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
+    "@reduxjs/toolkit": "^2.2.7",
     "@svgr/webpack": "^8.1.0",
     "axios": "^1.7.2",
+    "mockserver-node": "^5.15.0",
     "next": "14.2.4",
     "next-images": "^1.8.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-redux": "^9.1.2",
     "rsuite": "^5.66.0",
     "sass": "^1.77.8",
-    "url-loader": "^4.1.1",
-    "mockserver-node": "^5.15.0"
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "mockserver-client": "^5.15.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "mockserver-client": "^5.15.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

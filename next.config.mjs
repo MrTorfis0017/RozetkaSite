@@ -12,8 +12,15 @@ const nextConfig = {
                 },
             },
         });
-
         return config;
+    },
+    async rewrites() {
+        return [
+            {
+                source: '/api/catalog/find-categories-sidebar',
+                destination: `http://localhost:7080/api/catalog/find-categories-sidebar`,
+            },
+        ]
     },
 };
 
