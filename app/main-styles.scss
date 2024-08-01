@@ -1,3 +1,4 @@
+@import "typgoraphy";
 .main-page {
   display: flex;
   flex-direction: column;
@@ -25,18 +26,42 @@
     background-color: #fff3;
     border-radius: 12px;
     color: #fff;
+    cursor: pointer;
+
     &:hover {
       background-color: #fff6;
     }
-    .catalog-text{
+
+    .catalog-text {
       text-transform: none;
     }
   }
 
-  .search-field{
+  .search-field {
     height: 40px;
     border-radius: 12px;
     padding: 0 0 0 10px;
-    border:0;
+    border: 0;
+  }
+}
+
+.side-bar {
+  width: 300px;
+  height: 544px;
+  padding: 24px 0 12px 0;
+  border: 1px solid;
+  border-color: white grey grey white;
+  @include font-catalog;
+  .catalog-list {
+    display: flex;
+    align-items: center;
+    .catalog-value {
+      display: flex;
+      width: 300px;
+      height: 32px;
+      padding: 0 12px;
+      box-sizing: border-box;
+      align-items: center;
+    }
   }
 }

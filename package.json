@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "setup-mock": "node mock/main.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -19,9 +20,11 @@
     "react-dom": "^18",
     "rsuite": "^5.66.0",
     "sass": "^1.77.8",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "mockserver-node": "^5.15.0"
   },
   "devDependencies": {
+    "mockserver-client": "^5.15.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
