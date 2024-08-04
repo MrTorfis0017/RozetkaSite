@@ -1,8 +1,9 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import axios from "axios";
+import Category from "@/types/category";
 
 
-export const findSideBarCategories = createAsyncThunk<string[], void>(
+export const findSideBarCategories = createAsyncThunk<Category[], void>(
     'sale/findPrograms',
     async (_, {rejectWithValue}) => {
         try {
@@ -10,7 +11,7 @@ export const findSideBarCategories = createAsyncThunk<string[], void>(
                 method: 'get',
                 url: '/api/catalog/find-categories-sidebar'
             });
-            return response.data
+            return response.data as Category[];
         } catch (error) {
             return rejectWithValue({
                 message: `Failed to get data from server. ${(error as Error).message}`,

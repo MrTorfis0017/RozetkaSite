@@ -1,8 +1,8 @@
 'use client'
-import './main-styles.scss'
 import React from "react";
 import StoreProvider from "@/app/store-provider";
-import MainPageLayout from "@/app/main-page-layout";
+import Header from "@/app/components/header/header";
+import Sidebar from "@/app/components/sidebar/sidebar";
 
 export default function RootLayout({
                                        children,
@@ -13,7 +13,8 @@ export default function RootLayout({
         <html lang="en">
         <body>
         <StoreProvider>
-            <MainPageLayout/>
+            <Header/>
+            <Sidebar/>
         </StoreProvider>
         <main>{children}</main>
         </body>

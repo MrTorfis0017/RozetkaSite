@@ -1,4 +1,12 @@
 [
-  "Laptops and computers",
-  "Smartphones"
+  {
+    "id": 1,
+    "name": "Laptops and computers",
+    "photo": "catalog-laptop.svg"
+  },
+  {
+    "id": 2,
+    "name": "Smartphones",
+    "photo":"catalog-smartphone.svg"
+  }
 ]

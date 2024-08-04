@@ -1,9 +1,8 @@
 'use client'
-import './main-styles.scss'
-
+import './main.scss'
 export default function Page() {
     return (
-        <div className="main-page">
+        <div>
             Hello there admin
         </div>
     )
