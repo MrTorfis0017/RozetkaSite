@@ -2,11 +2,13 @@
   {
     "id": 1,
     "name": "Laptops and computers",
-    "photo": "catalog-laptop.svg"
+    "photo": "catalog-laptop.svg",
+    "parentCategory": null
   },
   {
     "id": 2,
     "name": "Smartphones",
-    "photo":"catalog-smartphone.svg"
+    "photo": "catalog-smartphone.svg",
+    "parentCategory": null
   }
 ]
