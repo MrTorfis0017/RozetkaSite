@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {findSideBarCategories} from "@/app/api/main-page/api";
 import StatusEnum from "@/types/status-enum";
 import Category from "@/types/category";
+import {findSideBarCategories} from "@/app/_api/main-page/api";
 
 type SideBarInitialState = {
     catalogList: Category[],

@@ -1,4 +1,4 @@
-@import "../../styles/typgoraphy";
+@import "../../_styles/typgoraphy";
 
 .sideBar {
   max-width: 300px;
@@ -14,6 +14,13 @@
     display: flex;
     align-items: center;
 
+    .catalogImg {
+      width: 20px;
+      height: 20px;
+      color: green;
+      fill: currentColor;
+    }
+
     .catalogValue {
       display: flex;
       width: 300px;
@@ -21,6 +28,11 @@
       padding: 0 12px;
       box-sizing: border-box;
       align-items: center;
+
+      &:hover {
+        color: #00a046;
+        cursor: pointer;
+      }
     }
   }
 }

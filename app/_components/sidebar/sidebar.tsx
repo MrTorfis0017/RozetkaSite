@@ -1,10 +1,10 @@
 import styles from "./sidebar-styles.module.scss";
 import React, {useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "@/store/hooks";
-import {findSideBarCategories} from "@/app/api/main-page/api";
 import StatusEnum from "@/types/status-enum";
-import Loading from "@/app/components/sidebar/loading";
 import Category from "@/types/category";
+import Loading from "@/app/_components/sidebar/loading";
+import {findSideBarCategories} from "@/app/_api/main-page/api";
 
 
 const Sidebar = () => {
@@ -21,7 +21,8 @@ const Sidebar = () => {
                 {menuCatalog.map((item: Category) => {
                     return (
                         <div key={item.id} className={styles.catalogList}>
-                            <img src={`/icons/${item.photo}`} alt="catalog-img" width="20px" height="20px"/>
+                            <img className={styles.catalogImg} src={`/icons/${item.photo}`} alt="catalog-img"
+                                 width="20px" height="20px"/>
                             <text className={styles.catalogValue}>
                                 {item.name}
                             </text>
