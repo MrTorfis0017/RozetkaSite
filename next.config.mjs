@@ -17,8 +17,20 @@ const nextConfig = {
     async rewrites() {
         return [
             {
-                source: '/api/catalog/find-categories-sidebar',
-                destination: `http://localhost:7080/api/catalog/find-categories-sidebar`,
+                source: '/api/category/find-subcategories/1',
+                destination: `http://localhost:7080/api/category/find-subcategories/1`,
+            },
+            {
+                source: '/api/category/getNameById/1',
+                destination: `http://localhost:7080/api/category/getNameById/1`,
+            },
+            {
+                source: '/api/images/1/find-slider-images',
+                destination: `http://localhost:7080/api/images/1/find-slider-images`,
+            },
+            {
+                source: '/api/category/find-categories-sidebar',
+                destination: `http://localhost:7080/api/category/find-categories-sidebar`,
             },
         ]
     },

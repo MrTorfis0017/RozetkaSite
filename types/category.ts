@@ -2,6 +2,6 @@ type Category = {
     id: number;
     name: string;
     photo: string;
-    parentCategory: string | null;
+    // parentCategory: string | null; ??
 }
 export default Category;

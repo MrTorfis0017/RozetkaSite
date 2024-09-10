@@ -5,9 +5,9 @@ const Home = () => {
     return (
         <main>
             <text>
-            Hello fellers
+                Hello fellers
             </text>
-            </main>
+        </main>
     )
 }
 

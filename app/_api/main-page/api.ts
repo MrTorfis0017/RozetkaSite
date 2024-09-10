@@ -2,14 +2,13 @@ import {createAsyncThunk} from "@reduxjs/toolkit";
 import axios from "axios";
 import Category from "@/types/category";
 
-
 export const findSideBarCategories = createAsyncThunk<Category[], void>(
-    'sale/findPrograms',
+    'sideBar/findCategories',
     async (_, {rejectWithValue}) => {
         try {
             const response = await axios({
                 method: 'get',
-                url: '/api/catalog/find-categories-sidebar'
+                url: '/api/category/find-categories-sidebar'
             });
             return response.data as Category[];
         } catch (error) {

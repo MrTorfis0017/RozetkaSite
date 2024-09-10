@@ -1,38 +1,32 @@
 [
   {
-    "id": 1,
-    "name": "Laptops",
-    "photo": "laptop.svg",
-    "parentCategory": "Laptops and computers"
-  },
-  {
-    "id": 2,
-    "name": "Computers",
-    "photo": "computer.svg",
-    "parentCategory": "Laptops and computers"
-  },
-  {
     "id": 3,
-    "name": "Monitors",
-    "photo": "monitor.svg",
-    "parentCategory": "Laptops and computers"
+    "name": "Laptops",
+    "photo": "laptop.png"
   },
   {
     "id": 4,
-    "name": "Computer parts",
-    "photo": "computer-parts.svg",
-    "parentCategory": "Laptops and computers"
+    "name": "Computers",
+    "photo": "computer.png"
   },
   {
     "id": 5,
-    "name": "Keyboard and mice",
-    "photo": "keyboard-mice.svg",
-    "parentCategory": "Laptops and computers"
+    "name": "Monitors",
+    "photo": "monitor.png"
   },
   {
     "id": 6,
+    "name": "Computer parts",
+    "photo": "computer-parts.png"
+  },
+  {
+    "id": 7,
+    "name": "Keyboard and mice",
+    "photo": "keyboard-mice.png"
+  },
+  {
+    "id": 8,
     "name": "Headphones and accessories",
-    "photo": "headphone-accessories.svg",
-    "parentCategory": "Laptops and computers"
+    "photo": "headphone-accessories.png"
   }
 ]

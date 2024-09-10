@@ -9,7 +9,9 @@ export default function MainLayout({children}: { children: React.ReactNode }) {
         <div>
             <StoreProvider>
                 <Header/>
-                <Sidebar/>
+                <div style={{padding: "0 32px"}}>
+                    <Sidebar/>
+                </div>
                 <main>{children}</main>
             </StoreProvider>
         </div>
